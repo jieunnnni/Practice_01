@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영업정보"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/restaurantNameTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/infoTextView"
+        android:text="상호명"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restaurantName"
+        app:layout_constraintStart_toEndOf="@id/restaurantNameTextView"
+        app:layout_constraintTop_toTopOf="@id/restaurantNameTextView"
+        tools:text="스탠딩스테이크"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/restaurantNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/restaurantNameTextView"
+        android:textSize="15sp"
+        android:text="운영시간"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        tools:text="오후 2:00 ~ 오후 11:30"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/timeTextView"
+        app:layout_constraintTop_toBottomOf="@id/restaurantName"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/closedTextView"
+        android:text="휴무일"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/timeTextView"
+        app:layout_constraintStart_toStartOf="@id/restaurantNameTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/closed"
+        android:textSize="15sp"
+        tools:text="연중무휴"
+        app:layout_constraintStart_toEndOf="@id/closedTextView"
+        app:layout_constraintTop_toBottomOf="@id/time"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        android:id="@+id/phoneNumberTextView"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/closedTextView"
+        app:layout_constraintStart_toStartOf="@id/restaurantNameTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNumber"
+        android:textSize="15sp"
+        tools:text="031-1234-2345"
+        app:layout_constraintStart_toEndOf="@id/phoneNumberTextView"
+        app:layout_constraintTop_toBottomOf="@id/closed"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTextView"
+        android:textSize="15sp"
+        android:text="주소"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberTextView"
+        app:layout_constraintStart_toStartOf="@id/restaurantNameTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:textSize="15sp"
+        tools:text="경기두 파주시 탄현면 헤이리마을길 59-52"
+        app:layout_constraintStart_toEndOf="@id/addressTextView"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumber"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/parkingTextView"
+        android:text="주차"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/addressTextView"
+        app:layout_constraintStart_toStartOf="@id/restaurantNameTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parking"
+        android:textSize="15sp"
+        tools:text="불가"
+        app:layout_constraintStart_toEndOf="@id/parkingTextView"
+        app:layout_constraintTop_toBottomOf="@id/address"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

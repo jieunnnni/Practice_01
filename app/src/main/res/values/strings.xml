@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Practice_01</string>
+    <string name="review_count">(%1$d+)</string>
+</resources>
